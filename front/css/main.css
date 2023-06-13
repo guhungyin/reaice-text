@@ -273,6 +273,14 @@
     position: absolute;
     background-color: rgba(255 255 255 / 0.5);
 }
+
+@media (max-width: 576px) {
+    .productExhibit .productSlick::before{
+        display: none;
+    }
+}
+
+
 /* 影片區 */
 .video .videobox{
     position: relative;

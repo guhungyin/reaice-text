@@ -3,7 +3,7 @@ $(document).ready(function(){
         arrows: true,
         centerMode: true,
         centerPadding: '500px',
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         slidesToShow: 1,
         dots: true,
@@ -86,8 +86,9 @@ $(document).ready(function(){
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1.1,
+                    slidesToShow: 1,
                     arrows: false,
+                    dots: true,
                 }
             },
         ]
