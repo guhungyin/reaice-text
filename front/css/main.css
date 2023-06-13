@@ -298,13 +298,13 @@
 .footerContent{
     border-bottom: 1px solid var(--color-greyD4);
 }
-.footer .footerConpany a{
+.footer .footerConpany .communityIcon{
     background-color: var(--color-grey9f);
     transition: all .5s;
     width: 40px;
     height: 40px;
 }
-.footer .footerConpany a:hover{
+.footer .footerConpany .communityIcon:hover{
     background-color: var(--color-brownDeep);
 }
 .pageTop{
