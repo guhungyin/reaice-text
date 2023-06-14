@@ -243,15 +243,6 @@
     background-color: rgba(0 0 0 / 40%);
 }
 /* 最新推出 + 熱門商品 */
-.productExhibit .productSlick::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 74%;
-    width: 86%;
-    background-color: var(--color-brownLight);
-}
 .productExhibit span{
     color: var(--color-grey66);
     font-size: .875rem;
@@ -263,7 +254,7 @@
 .productExhibit .slick-arrow{
     position: absolute;
     transform: translate(0,-50%);
-    top: 35%;
+    top: 50%;
     border: none;
     outline: none;
     color: transparent;
@@ -275,7 +266,7 @@
     z-index: 1;
 }
 .productExhibit .slick-arrow.slick-prev{
-    left: 0%;
+    left: -1%;
     background: #ffffffd9 url('../images/icon/ic_left_black.svg') no-repeat center center / 30%;
 }
 .productExhibit .slick-arrow.slick-next{
@@ -290,7 +281,9 @@
     position: absolute;
     background-color: rgba(255 255 255 / 0.5);
 }
-
+.productExhibit .slick-dots{
+    margin-top: 1rem;
+}
 @media (max-width: 576px) {
     .productExhibit .productSlick::before{
         display: none;
