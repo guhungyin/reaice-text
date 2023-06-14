@@ -6,9 +6,6 @@
 .nav-link:focus{
     color: var(--color-brownDeep);
 }
-.navbar-light .navbar-nav .nav-link{
-    color: var(--color-black);
-}
 /* 輪播 */
 .slick-dots{
     display: flex !important;
@@ -70,11 +67,31 @@
     color: var(--color-black);
     background-color: var(--color-greyD4);
 }
+.dropdown .dropdown-menu{
+    width: 240px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdownListMenu span{
+    cursor: pointer;
+}
+.dropdownListMenu > ul{
+    display: none;
+    left: 100%;
+    top: 0;
+    width: 240px;
+    max-height: 50vh;
+}
+.dropdownListMenu:hover > ul{
+    display: block;
+}
+/* 手機選單 */
 .menuBtn:focus{
     box-shadow: none;
 }
-/* 手機選單 */
-.phoneMenu .productDropdown[aria-expanded="true"] .ic_arr{
+.phoneMenu [aria-expanded="true"] .ic_arr{
     transform: rotate(-180deg);
 }
 .searchDropdown .dropdown-menu.show{
@@ -279,8 +296,6 @@
         display: none;
     }
 }
-
-
 /* 影片區 */
 .video .videobox{
     position: relative;

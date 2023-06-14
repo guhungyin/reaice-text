@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="alert alert-primary discountAlert border-0 rounded-0 text-white d-flex justify-content-center align-items-center mb-0" role="alert">訂單金額滿 $800，即可享有免運服務<img src="./images/icon/ic_right.svg" alt=""></div>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid container-lg justify-content-start justify-content-md-between">
           <button class="navbar-toggler menuBtn border-0 p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <img src="./images/icon/ic_menu.svg" alt="">
@@ -32,24 +32,86 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   商品列表
                 </a>
-                <ul class="dropdown-menu productsMenuDropdown" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#">手機線材</a>
+                <ul class="dropdown-menu border-0 m-0 rounded-0 pb-0" aria-labelledby="navbarDropdown">
+                  <li class="border dropdownListMenu position-relative">
+                    <span class="nav-link py-2">充電線材</span>
+                    <ul class="navbar-nav position-absolute bg-white t-0">
+                      <li class="border">
+                        <a class="nav-link" href="#">Apple | C to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | C to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | A to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-A to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-C to C</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">充電器</a>
+                  <li class="border border-top-0 dropdownListMenu position-relative">
+                    <span class="nav-link py-2">車旅充</span>
+                    <ul class="navbar-nav position-absolute bg-white t-0">
+                      <li class="border">
+                        <a class="nav-link" href="#">USB充電器</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">GaN氮化鎵快充器</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">車用充電器</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Qi無線充電</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">行動電源</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">直播專區</a>
+                  <li class="border border-top-0 dropdownListMenu position-relative">
+                    <span class="nav-link py-2">直播專區</span>
+                    <ul class="navbar-nav position-absolute bg-white t-0">
+                      <li class="border">
+                        <a class="nav-link" href="#">Apple | C to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | C to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | A to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-A to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-C to C</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">車用專區</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">耳機專區</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">視聽專區</a>
+                  <li class="border border-top-0 dropdownListMenu position-relative">
+                    <span class="nav-link py-2">耳機專區</span>
+                    <ul class="navbar-nav position-absolute bg-white t-0">
+                      <li class="border">
+                        <a class="nav-link" href="#">Apple | C to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | C to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Apple | A to Lightning</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-A to C</a>
+                      </li>
+                      <li class="border border-top-0 border-start-0">
+                        <a class="nav-link" href="#">Android | USB-C to C</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -594,25 +656,87 @@
             <a class="nav-link fw-bold" href="#">新品上市</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold d-flex justify-content-between productDropdown" data-bs-toggle="collapse" href="#productDropdown" role="button" aria-expanded="false" aria-controls="productDropdown">商品列表<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></a>
+            <span class="nav-link fw-bold d-flex justify-content-between productDropdown" data-bs-toggle="collapse" href="#productDropdown" role="button" aria-expanded="false" aria-controls="productDropdown">商品列表<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
             <ul class="navbar-nav collapse multi-collapse ps-2" id="productDropdown">
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">手機線材</a>
+                <span class="nav-link fw-bold d-flex justify-content-between" data-bs-toggle="collapse" href="#cableDropdown" role="button" aria-expanded="false" aria-controls="cableDropdown">充電線材<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
+                <ul class="navbar-nav collapse multi-collapse border-start ps-3" id="cableDropdown">
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | A to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-A to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-C to C</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">充電器</a>
+                <span class="nav-link fw-bold d-flex justify-content-between" data-bs-toggle="collapse" href="#hargerDropdown" role="button" aria-expanded="false" aria-controls="hargerDropdown">車旅充<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
+                <ul class="navbar-nav collapse multi-collapse border-start ps-3" id="hargerDropdown">
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | A to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-A to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-C to C</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">直播專區</a>
+                <span class="nav-link fw-bold d-flex justify-content-between" data-bs-toggle="collapse" href="#liveDropdown" role="button" aria-expanded="false" aria-controls="liveDropdown">直播專區<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
+                <ul class="navbar-nav collapse multi-collapse border-start ps-3" id="liveDropdown">
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | A to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-A to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-C to C</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">車用專區</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">耳機專區</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" href="#">視聽專區</a>
+                <span class="nav-link fw-bold d-flex justify-content-between" data-bs-toggle="collapse" href="#headphonesDropdown" role="button" aria-expanded="false" aria-controls="headphonesDropdown">耳機專區<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
+                <ul class="navbar-nav collapse multi-collapse border-start ps-3" id="headphonesDropdown">
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | C to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Apple | A to Lightning</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-A to C</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#">Android | USB-C to C</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
