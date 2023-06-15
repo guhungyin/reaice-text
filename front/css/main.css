@@ -333,3 +333,25 @@
         bottom: 6rem;
     }
 }
+/* 分頁 */
+.page-link{
+    color: var(--color-grey66);
+    padding: 0.5rem 0.925rem;
+}
+.active>.page-link,
+.page-link.active{
+    background-color: var(--color-brownDeep);
+    border-color: var(--color-brownDeep);
+    color: var(--color-white);
+}
+.page-link:hover{
+    background-color: var(--color-brownDeep);
+    border-color: var(--color-brownDeep);
+    color: var(--color-white);
+}
+.page-link:focus{
+    background-color: var(--color-brownDeep);
+    border-color: var(--color-brownDeep);
+    color: var(--color-white);
+    box-shadow: 0 0 0 0.25rem var(--color-brownLight);
+}

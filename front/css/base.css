@@ -14,8 +14,16 @@
     --color-brown: #AC9E91;
     --color-brownDeep: #A78667;
     --color-brownLight: #F1ECE8;
+    --bs-body-font-size: .875rem;
+
 }
 body{
     font-family: Inter, -apple-system, 'Microsoft JhengHei UI', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+.fs-7{
+    font-size: .9rem;
+}
+.fs-8{
+    font-size: .8rem;
 }

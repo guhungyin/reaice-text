@@ -17,10 +17,12 @@
 .card-product-action{
     top: 35%;
     opacity: 0;
+    visibility: hidden;
     transition: all .3s ease 0s;
 }
 .shopProductItem:hover .card-product-action{
     opacity: 1;
+    visibility: visible;
 }
 .card-product-action a{
     background-color: var(--color-white);

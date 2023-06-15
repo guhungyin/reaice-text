@@ -149,7 +149,10 @@
             </div>
             <a href="#" class="cartBtn text-decoration-none position-relative">
               <img src="./images/icon/ic_cart.svg" alt="購物車">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">0</span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
             </a>
           </div>
         </div>
@@ -168,9 +171,9 @@
             <div class="container">
                 <div class="row">
                     <aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
-                        <div class="offcanvas offcanvas-start offcanvas-collapse w-md-50 border-0" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas offcanvas-start offcanvas-collapse w-md-50 border-0" tabindex="-1" id="filtersMenu" aria-labelledby="filtersMenuLabel">
                             <div class="offcanvas-header d-lg-none">
-                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">篩選</h5>
                               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body ps-lg-2 pt-lg-0">
@@ -326,12 +329,20 @@
                             </div>
                             <div class="d-md-flex justify-content-between align-items-center">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <a href="#" class="me-3">
-                                        <img src="./images/icon/ic_shop_list.svg" alt="">
-                                    </a>
-                                    <a href="#" class="me-3">
-                                        <img src="./images/icon/ic_shop_grid.svg" alt="">
-                                    </a>
+                                  <div class="me-2">
+                                    <button class="btn">
+                                        <img height="20" src="./images/icon/ic_shop_list.svg" alt="">
+                                    </button>
+                                    <button class="btn">
+                                        <img height="20" src="./images/icon/ic_shop_grid.svg" alt="">
+                                    </button>
+                                  </div>
+                                  <div class="ms-2 d-lg-none">
+                                    <a class="btn btn-outline-secondary" data-bs-toggle="offcanvas" href="#filtersMenu" role="button" aria-controls="filtersMenu">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter me-2">
+                                      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                                    </svg>篩選</a>
+                                  </div>
                                 </div>
                                 <div class="mt-2 mt-lg-0">
                                     <select class="form-select">
@@ -348,22 +359,27 @@
                         <div class="row g-2 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
                           <div class="col">
                             <div class="card p-2 p-md-3 shopProductItem">
-                              <a href="#" class="card-img-top position-relative">
-                                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                              </a>
-                              <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_search"></i>
+                              <div class="card-img-top text-center position-relative">
+                                <div class=" position-absolute top-0">
+                                  <span class="badge bg-danger">New</span>
+                                </div>
+                                <a href="#">
+                                  <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
                                 </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_cart"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_like"></i>
-                                </a>
+                                <div class="card-product-action position-absolute start-50 translate-middle d-flex">
+                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
+                                    <i class="ic_search"></i>
+                                  </a>
+                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
+                                    <i class="ic_cart"></i>
+                                  </a>
+                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
+                                    <i class="ic_like"></i>
+                                  </a>
+                                </div>
                               </div>
                               <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex">
+                              <div class="commentStart mt-auto d-flex fs-7">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
@@ -392,7 +408,7 @@
                                 </a>
                               </div>
                               <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex">
+                              <div class="commentStart mt-auto d-flex fs-8">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
                                 <img src="./images/icon/ic_star_01.svg" alt="">
@@ -492,19 +508,25 @@
                             </div>
                           </div>
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-5">
                           <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                              <li class="page-item">
-                                <a class="nav-link border" href="#" aria-label="Previous">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item disabled me-2">
+                                <a class="page-link rounded-1" href="#" aria-label="Previous">
                                   <span aria-hidden="true">&laquo;</span>
                                 </a>
                               </li>
-                              <li class="page-item"><a class="nav-link border" href="#">1</a></li>
-                              <li class="page-item"><a class="nav-link border" href="#">2</a></li>
-                              <li class="page-item"><a class="nav-link border" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="nav-link border" href="#" aria-label="Next">
+                              <li class="page-item mx-2">
+                                <a class="page-link rounded-1 active" href="#">1</a>
+                              </li>
+                              <li class="page-item mx-2">
+                                <a class="page-link rounded-1" href="#">2</a>
+                              </li>
+                              <li class="page-item mx-2">
+                                <a class="page-link rounded-1" href="#">3</a>
+                              </li>
+                              <li class="page-item ms-2">
+                                <a class="page-link rounded-1" href="#" aria-label="Next">
                                   <span aria-hidden="true">&raquo;</span>
                                 </a>
                               </li>
