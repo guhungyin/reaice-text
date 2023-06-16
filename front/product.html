@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/product.css">
 </head>
 <body>
@@ -17,10 +18,10 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid container-lg justify-content-start justify-content-md-between">
           <button class="navbar-toggler menuBtn border-0 p-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobileMenu" aria-controls="offcanvasMobileMenu">
-            <img src="./images/icon/ic_menu.svg" alt="">
+            <img src="./images/icon/ic_menu.svg" alt="選單">
           </button>
-          <a class="navbar-brand" href="./index.html" id="searchDropdown" role="button" data-bs-toggle="dropdown">
-            <img height="20" src="./images/logo/logo.svg" alt="Reaic台陞科技│消費性電子專家">
+          <a class="navbar-brand" href="./index.html">
+            <img height="20" src="./images/logo/logo.svg" alt="REAICE台陞科技│消費性電子專家">
           </a>
           <div class="collapse navbar-collapse me-auto order-1 order-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -159,384 +160,352 @@
     </nav>
     <!-- 麵包屑 -->
     <section class="border-top mb-2">
-        <nav class="container" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 py-3">
-              <li class="breadcrumb-item"><a class="nav-link p-0 text-decoration-none" href="./index.html">首頁</a></li>
-              <li class="breadcrumb-item active" aria-current="page">USB-C To Lightning 充電傳輸線</li>
-            </ol>
-        </nav>
+      <nav class="container" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 py-3">
+          <li class="breadcrumb-item"><a class="p-0 text-decoration-none" href="./index.html">首頁</a></li>
+          <li class="breadcrumb-item"><a class="p-0 text-decoration-none" href="./products.html">USB-C To Lightning 充電傳輸線</a></li>
+          <li class="breadcrumb-item active" aria-current="page">【REAICE】編織充電線│USB A to Lightning</li>
+        </ol>
+      </nav>
     </section>
-    <main>
-        <div class="mt-4 mb-4">
-            <div class="container">
-                <div class="row">
-                    <aside class="col-lg-3 col-md-4 mb-6 mb-md-0">
-                        <div class="offcanvas offcanvas-start offcanvas-collapse w-md-50 border-0" tabindex="-1" id="filtersMenu" aria-labelledby="filtersMenuLabel">
-                            <div class="offcanvas-header d-lg-none">
-                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">篩選</h5>
-                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body ps-lg-2 pt-lg-0">
-                                <div class="mb-4">
-                                    <h6 class="fw-bold mb-3">商品列表</h6>
-                                    <ul class="nav nav-category" id="productsMenu">
-                                        <li class="nav-item border-bottom w-100">
-                                            <a href="#" class="ps-0 nav-link collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#ProductPageCableMenu" aria-expanded="false" aria-controls="ProductPageCableMenu">充電線材<img class="ic_arr" src="./images/icon/ic_right_black.svg" alt=""></a>
-                                            <div id="ProductPageCableMenu" class="accordion-collapse collapse" data-bs-parent="#productsMenu">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Apple | C to C</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Apple | C to Lightning</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Apple | A to Lightning</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Android | USB-A to C</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Android | USB-C to C</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item border-bottom w-100">
-                                            <a href="#" class="ps-0 nav-link collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#ProductPageCargerMenu" aria-expanded="false" aria-controls="ProductPageCargerMenu">車旅充<img class="ic_arr" src="./images/icon/ic_right_black.svg" alt=""></a>
-                                            <div id="ProductPageCargerMenu" class="accordion-collapse collapse" data-bs-parent="#productsMenu">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">USB充電器</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">GaN氮化鎵快充器</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">車用充電器</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">Qi無線充電</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">行動電源</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item border-bottom w-100">
-                                            <a href="#" class="ps-0 nav-link collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#ProductPageLiveMenu" aria-expanded="false" aria-controls="ProductPageLiveMenu">直播專區<img class="ic_arr" src="./images/icon/ic_right_black.svg" alt=""></a>
-                                            <div id="ProductPageLiveMenu" class="accordion-collapse collapse" data-bs-parent="#productsMenu">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">直播燈</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">會議麥克風</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item border-bottom w-100">
-                                            <a href="#" class="ps-0 nav-link collapsed d-flex justify-content-between" data-bs-toggle="collapse" data-bs-target="#ProductPageHeadphonesMenu" aria-expanded="false" aria-controls="ProductPageHeadphonesMenu">耳機專區<img class="ic_arr" src="./images/icon/ic_right_black.svg" alt=""></a>
-                                            <div id="ProductPageHeadphonesMenu" class="accordion-collapse collapse" data-bs-parent="#productsMenu">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">無線藍牙耳機</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">入耳式耳機</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link">運動型耳機</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="mb-4">
-                                    <h6 class="fw-bold mb-3">商品評分</h6>
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="commentCheck5">
-                                        <label class="form-check-label" for="commentCheck5">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <span class="ms-2">5.0</span>
-                                        </label>
-                                    </div>                                       
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="commentCheck4">
-                                        <label class="form-check-label" for="commentCheck4">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <span class="ms-2">4.0</span>
-                                        </label>
-                                    </div>                                       
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="commentCheck3">
-                                        <label class="form-check-label" for="commentCheck3">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <span class="ms-2">3.0</span>
-                                        </label>
-                                    </div>                                       
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="commentCheck2">
-                                        <label class="form-check-label" for="commentCheck2">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <span class="ms-2">2.0</span>
-                                        </label>
-                                    </div>                                       
-                                    <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="commentCheck1">
-                                        <label class="form-check-label" for="commentCheck1">
-                                            <img height="15" src="./images/icon/ic_star_01.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <img height="15" src="./images/icon/ic_star_03.svg" alt="">
-                                            <span class="ms-2">1.0</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="mb-4">
-                                    <img class="img-fluid rounded " src="https://fs-a.ecimg.tw/img/h24/v2/layout/index/hit/064770c95553bb64770c9555450ecman1/0_1_20230614121010.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                    <section class="col-lg-9 col-md-12">
-                        <div class="mb-3">
-                            <img src="https://fs-a.ecimg.tw/img/h24/v2/layout/index/hero/06482934d5bc9a6482934d5bceaecman2/2_1_20230614122946.jpg" class="img-fluid rounded-2" alt="...">
-                        </div>
-                        <div class="d-lg-flex justify-content-between align-items-center">
-                            <div class="mb-3 mb-lg-0">
-                                <p class="mb-0">共<span class="text-dark"> 24 </span>項產品</p>
-                            </div>
-                            <div class="d-md-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center justify-content-between">
-                                  <div class="me-2">
-                                    <button class="btn">
-                                        <img height="20" src="./images/icon/ic_shop_list.svg" alt="">
-                                    </button>
-                                    <button class="btn">
-                                        <img height="20" src="./images/icon/ic_shop_grid.svg" alt="">
-                                    </button>
-                                  </div>
-                                  <div class="ms-2 d-lg-none">
-                                    <a class="btn btn-outline-secondary" data-bs-toggle="offcanvas" href="#filtersMenu" role="button" aria-controls="filtersMenu">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter me-2">
-                                      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                                    </svg>篩選</a>
-                                  </div>
-                                </div>
-                                <div class="mt-2 mt-lg-0">
-                                    <select class="form-select">
-                                        <option selected="預設排序">預設排序</option>
-                                        <option value="價格由高到低">價格由高到低</option>
-                                        <option value="價格由低到高">價格由低到高</option>
-                                        <option value="上市日期舊到新">上市日期舊到新</option>
-                                        <option value="上市日期新到舊">上市日期新到舊</option>
-                                        <option value="本週熱賣">本週熱賣</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-2 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
-                          <div class="col">
-                            <div class="card p-2 p-md-3 shopProductItem">
-                              <div class="card-img-top text-center position-relative">
-                                <div class=" position-absolute top-0">
-                                  <span class="badge bg-danger">New</span>
-                                </div>
-                                <a href="#">
-                                  <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                                </a>
-                                <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                    <i class="ic_search"></i>
-                                  </a>
-                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                    <i class="ic_cart"></i>
-                                  </a>
-                                  <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                    <i class="ic_like"></i>
-                                  </a>
-                                </div>
-                              </div>
-                              <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex fs-7">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <span class="ms-2">5.0</span>
-                                <span class="">（50）</span>
-                              </div>
-                              <p class="card-text">$399</p>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card p-2 p-md-3 shopProductItem">
-                              <a href="#" class="card-img-top position-relative">
-                                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                              </a>
-                              <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_search"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_cart"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_like"></i>
-                                </a>
-                              </div>
-                              <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex fs-8">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <span class="ms-2">5.0</span>
-                                <span class="">（50）</span>
-                              </div>
-                              <p class="card-text">$399</p>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card p-2 p-md-3 shopProductItem">
-                              <a href="#" class="card-img-top position-relative">
-                                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                              </a>
-                              <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_search"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_cart"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_like"></i>
-                                </a>
-                              </div>
-                              <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <span class="ms-2">5.0</span>
-                                <span class="">（50）</span>
-                              </div>
-                              <p class="card-text">$399</p>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card p-2 p-md-3 shopProductItem">
-                              <a href="#" class="card-img-top position-relative">
-                                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                              </a>
-                              <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_search"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_cart"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_like"></i>
-                                </a>
-                              </div>
-                              <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <span class="ms-2">5.0</span>
-                                <span class="">（50）</span>
-                              </div>
-                              <p class="card-text">$399</p>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="card p-2 p-md-3 shopProductItem">
-                              <a href="#" class="card-img-top position-relative">
-                                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
-                              </a>
-                              <div class="card-product-action position-absolute start-50 translate-middle d-flex">
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_search"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_cart"></i>
-                                </a>
-                                <a href="#" class="mx-1 d-flex justify-content-center align-items-center">
-                                  <i class="ic_like"></i>
-                                </a>
-                              </div>
-                              <h6 class="card-title"><a href="#" class="nav-link p-0">【REAICE】編織充電線│USB A to Lightning</a></h6>
-                              <div class="commentStart mt-auto d-flex">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <img src="./images/icon/ic_star_01.svg" alt="">
-                                <span class="ms-2">5.0</span>
-                                <span class="">（50）</span>
-                              </div>
-                              <p class="card-text">$399</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mt-5">
-                          <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                              <li class="page-item disabled me-2">
-                                <a class="page-link rounded-1" href="#" aria-label="Previous">
-                                  <span aria-hidden="true">&laquo;</span>
-                                </a>
-                              </li>
-                              <li class="page-item mx-2">
-                                <a class="page-link rounded-1 active" href="#">1</a>
-                              </li>
-                              <li class="page-item mx-2">
-                                <a class="page-link rounded-1" href="#">2</a>
-                              </li>
-                              <li class="page-item mx-2">
-                                <a class="page-link rounded-1" href="#">3</a>
-                              </li>
-                              <li class="page-item ms-2">
-                                <a class="page-link rounded-1" href="#" aria-label="Next">
-                                  <span aria-hidden="true">&raquo;</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                    </section>
-                </div>
+    <main class="my-md-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- productImg -->
+            <div class="productImg mb-3">
+              <div>
+                <img class="img-fluid mx-auto" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfZjEwZTA3YTU1YzA0OTM0OTY4NmUuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=7b45b5f037bf7ed1" alt="">
+              </div>
+              <div>
+                <img class="img-fluid mx-auto" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfYTQwYmNmOTFjMzdlYzc4NDUyYTQuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=920166ae510b1a1d" alt="">
+              </div>
+              <div>
+                <img class="img-fluid mx-auto" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfMGRkYmE3MzEyNWQ0Mjc5MTAxYWUuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=4199bb4a38665cec" alt="">
+              </div>
+              <div>
+                <img class="img-fluid mx-auto" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfYTEwNTYwNGYyMjIxNTcxYzY3N2MuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=e19945b072e3158e" alt="">
+              </div>
+              <div>
+                <img class="img-fluid mx-auto" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfZTRiNzAxY2FhZDNlNTZhNTk4Y2MuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d408222ec6886afe" alt="">
+              </div>
             </div>
+            <!-- productSlick -->
+            <div class="productSlick">
+              <div class="mx-1 mx-lg-3">
+                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfZjEwZTA3YTU1YzA0OTM0OTY4NmUuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=7b45b5f037bf7ed1" alt="">
+              </div>
+              <div class="mx-1 mx-lg-3">
+                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfYTQwYmNmOTFjMzdlYzc4NDUyYTQuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=920166ae510b1a1d" alt="">
+              </div>
+              <div class="mx-1 mx-lg-3">
+                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfMGRkYmE3MzEyNWQ0Mjc5MTAxYWUuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=4199bb4a38665cec" alt="">
+              </div>
+              <div class="mx-1 mx-lg-3">
+                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfYTEwNTYwNGYyMjIxNTcxYzY3N2MuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=e19945b072e3158e" alt="">
+              </div>
+              <div class="mx-1 mx-lg-3">
+                <img class="img-fluid" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzM2Mjc3ODg0LzE2NDU1MTA5NDJfZTRiNzAxY2FhZDNlNTZhNTk4Y2MuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d408222ec6886afe" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+            <div class="mt-3 mt-md-0">
+              <!-- 分類 -->
+              <a href="#" class="nav-link p-0 mb-3 fw-bold">手機線材</a>
+              <!-- 產品名稱 -->
+              <h3 class="mb-3">編織充電線│USB C to Lightning</h3>
+              <!-- 商品評分 -->
+              <div class="mb-4 d-flex">
+                <small>
+                  <img src="./images/icon/ic_star_01.svg" alt="">
+                  <img src="./images/icon/ic_star_01.svg" alt="">
+                  <img src="./images/icon/ic_star_01.svg" alt="">
+                  <img src="./images/icon/ic_star_01.svg" alt="">
+                  <img src="./images/icon/ic_star_01.svg" alt="">
+                </small>
+                <a href="#" class="nav-link p-0">（500條評論）</a>
+              </div>
+              <!-- 價格 -->
+              <div class="fs-5 mb-4">
+                <span class="fw-bold me-2">$399</span>
+                <span class="text-decoration-line-through text-muted">$599</span>
+              </div>
+              <hr class="my-4">
+              <!-- 選商品規格 -->
+              <h6>顏色</h6>
+              <div class="mb-4">
+                <button type="button" class="btn btn-outline-brownDeep me-2">小滄藍</button>
+                <button type="button" class="btn btn-outline-brownDeep me-2">曜岩黑</button>
+                <button type="button" class="btn btn-outline-brownDeep me-2">啞鉑金</button>
+                <button type="button" class="btn btn-outline-brownDeep me-2">鋒芒銀</button>
+              </div>
+              <!-- 商品數量 -->
+              <select class="form-select w-md-25 mb-4" aria-label="Default select example">
+                <option selected>請選擇數量</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <div class="mb-4">
+                <button type="button" class="btn btn-outline-brownDeep me-2">
+                  <i class="ic_cart align-middle"></i>
+                  加入購物車
+                </button>
+                <button type="button" class="btn btn-outline-brownDeep me-2">
+                  <i class="ic_like align-middle"></i>
+                </button>
+              </div>
+              <hr class="my-4">
+              <div class="">
+                <table class="table table-borderless mb-0 align-middle">
+                  <tbody>
+                    <tr>
+                      <td>商品編號 : </td>
+                      <td>CONNECT GEAR FLEX CC</td>
+                    </tr>
+                    <tr>
+                      <td>商品數量 : </td>
+                      <td class="text-success fw-bold">999</td>
+                    </tr>
+                    <tr>
+                      <td>出貨地點 : </td>
+                      <td>台中市西區</td>
+                    </tr>
+                    <tr>
+                      <td>商品分享 : </td>
+                      <td>
+                        <a href="#" class="text-decoration-none me-2">
+                          <img height="20" src="./images/icon/ic_fb_brown.svg" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none me-2">
+                          <img height="20" src="./images/icon/ic_ig_brown.svg" alt="">
+                        </a>
+                        <a href="#" class="text-decoration-none me-2">
+                          <img height="20" src="./images/icon/ic_line_brown.svg" alt="">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- 商品介紹 -->
+        <section class="mt-5">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item me-2" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">商品特點</button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">商品規格</button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">運送方式</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane pt-3 fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <ul>
+                <li class="mb-3">日本最新流行馬卡龍配色</li>
+                <li class="mb-3">日本各大平台熱賣，台灣初步登場</li>
+                <li class="mb-3">3A大電流充電，支援眾多機型使用</li>
+                <li class="mb-3">資料傳輸兼具，每秒 480Mbps 高傳輸</li>
+                <li class="mb-3">特殊耐操材質不纏繞，親膚材質完美觸感</li>
+                <li class="mb-3">獨家石墨包覆、高純度銅製芯線，安全不過熱</li>
+                <li class="mb-3">日本精神細節到位，矽膠收納束帶1.2米完美長度</li>
+              </ul>
+            </div>
+            <div class="tab-pane pt-3 fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <ul>
+                <li class="mb-3">產品型號：AVCUCL10</li>
+                <li class="mb-3">適用規格：Lightning to USB C</li>
+                <li class="mb-3">適用設備：Lightning to USB C 接頭之設備皆通用</li>
+                <li class="mb-3">線材長度：1M (100cm)</li>
+                <li class="mb-3">插頭材質：鋅合金</li>
+                <li class="mb-3">外殼材質：PC電鍍</li>
+                <li class="mb-3">外編織材質：聚酯纖維</li>
+                <li class="mb-3">線徑：3.1mm</li>
+                <li class="mb-3">產地：台灣設計，中國製造</li>
+                <li class="mb-3">注意事項：本商品除傳輸線產品之外不含任何商照上之物品</li>
+                <li class="mb-3">備註：商品會因光線與電腦顯色有所差異，請以實際商品為主</li>
+                <li class="mb-3">保固：非人為因素損壞，Avier原廠保固一年(須出示購買證明)</li>
+              </ul>
+            </div>
+            <div class="tab-pane pt-3 fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <ul>
+                <li class="mb-3">單筆訂單消費金額滿 590 元以上即可免運費（不含離島地區澎湖、金門、馬祖）。</li>
+                <li class="mb-3">超商（7-11、全家）大約三~五天配送時間，門市取貨付款 65 元（不含離島地區澎湖、金門、馬祖）。</li>
+                <li class="mb-3">宅配大約一~三天配送時間，單筆運費 90&nbsp;元（不含離島地區澎湖、金門、馬祖）。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 相關商品 -->
+        <section class="my-5">
+          <div class="container">
+            <h5 class="d-flex align-items-center mb-3"><img class="me-2" src="./images/icon/ic_label.svg" alt="">相關商品</h5>
+            <div class="relatedProductSlick">
+              <div>
+                  <div class="card bg-transparent mx-2 h-100">
+                    <a href="#" class="card-img-top position-relative">
+                      <img class="img-fluid w-100" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
+                    </a>
+                    <div class="card-body">
+                      <h6 class="card-title mb-3">
+                        <a href="#" class="nav-link p-0 mb-2">【REAICE】編織充電線│USB A to Lightning</a>
+                        <div class="commentStart mt-auto d-flex">
+                          <img src="./images/icon/ic_star_01.svg" alt="">
+                          <img src="./images/icon/ic_star_01.svg" alt="">
+                          <img src="./images/icon/ic_star_01.svg" alt="">
+                          <img src="./images/icon/ic_star_01.svg" alt="">
+                          <img src="./images/icon/ic_star_01.svg" alt="">
+                          <span class="ms-2">5.0</span>
+                          <span>（50）</span>
+                        </div>
+                      </h6>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div>
+                          <span class="me-1">$399</span>
+                          <span class="text-decoration-line-through text-muted">$599</span>
+                        </div>
+                        <button type="button" class="btn btn-brownDeep">
+                          <img height="16" class="d-inline align-middle" src="./images/icon/ic_cart_white.svg" alt="">
+                          加入購物車
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div>
+                <div class="card bg-transparent mx-2 h-100">
+                  <a href="#" class="card-img-top position-relative">
+                    <img class="img-fluid w-100" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
+                  </a>
+                  <div class="card-body">
+                    <h6 class="card-title mb-3">
+                      <a href="#" class="nav-link p-0 mb-2">【REAICE】編織充電線│USB A to Lightning</a>
+                      <div class="commentStart mt-auto d-flex">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <span class="ms-2">5.0</span>
+                        <span>（50）</span>
+                      </div>
+                    </h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div>
+                        <span class="me-1">$399</span>
+                        <span class="text-decoration-line-through text-muted">$599</span>
+                      </div>
+                      <button type="button" class="btn btn-brownDeep">
+                        <img height="16" class="d-inline align-middle" src="./images/icon/ic_cart_white.svg" alt="">
+                        加入購物車
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card bg-transparent mx-2 h-100">
+                  <a href="#" class="card-img-top position-relative">
+                    <img class="img-fluid w-100" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
+                  </a>
+                  <div class="card-body">
+                    <h6 class="card-title mb-3">
+                      <a href="#" class="nav-link p-0 mb-2">【REAICE】編織充電線│USB A to Lightning</a>
+                      <div class="commentStart mt-auto d-flex">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <span class="ms-2">5.0</span>
+                        <span>（50）</span>
+                      </div>
+                    </h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div>
+                        <span class="me-1">$399</span>
+                        <span class="text-decoration-line-through text-muted">$599</span>
+                      </div>
+                      <button type="button" class="btn btn-brownDeep">
+                        <img height="16" class="d-inline align-middle" src="./images/icon/ic_cart_white.svg" alt="">
+                        加入購物車
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card bg-transparent mx-2 h-100">
+                  <a href="#" class="card-img-top position-relative">
+                    <img class="img-fluid w-100" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
+                  </a>
+                  <div class="card-body">
+                    <h6 class="card-title mb-3">
+                      <a href="#" class="nav-link p-0 mb-2">【REAICE】編織充電線│USB A to Lightning</a>
+                      <div class="commentStart mt-auto d-flex">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <span class="ms-2">5.0</span>
+                        <span>（50）</span>
+                      </div>
+                    </h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div>
+                        <span class="me-1">$399</span>
+                        <span class="text-decoration-line-through text-muted">$599</span>
+                      </div>
+                      <button type="button" class="btn btn-brownDeep">
+                        <img height="16" class="d-inline align-middle" src="./images/icon/ic_cart_white.svg" alt="">
+                        加入購物車
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card bg-transparent mx-2 h-100">
+                  <a href="#" class="card-img-top position-relative">
+                    <img class="img-fluid w-100" src="https://cdn.cybassets.com/media/W1siZiIsIjE3NTM4L3Byb2R1Y3RzLzQwODY2MjM2LzE2ODQyOTE5MThfNjdjNDI0NDYzYWM5YjAwOTgxOTIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=d6b36b455539bd07" alt="【現貨】編織快充線│USB A TO TYPE C│日本同步 馬卡龍色系 (共5色)">
+                  </a>
+                  <div class="card-body">
+                    <h6 class="card-title mb-3">
+                      <a href="#" class="nav-link p-0 mb-2">【REAICE】編織充電線│USB A to Lightning</a>
+                      <div class="commentStart mt-auto d-flex">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <img src="./images/icon/ic_star_01.svg" alt="">
+                        <span class="ms-2">5.0</span>
+                        <span>（50）</span>
+                      </div>
+                    </h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div>
+                        <span class="me-1">$399</span>
+                        <span class="text-decoration-line-through text-muted">$599</span>
+                      </div>
+                      <button type="button" class="btn btn-brownDeep">
+                        <img height="16" class="d-inline align-middle" src="./images/icon/ic_cart_white.svg" alt="">
+                        加入購物車
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -685,7 +654,7 @@
                 <span class="nav-link fw-bold d-flex justify-content-between" data-bs-toggle="collapse" href="#cableDropdown" role="button" aria-expanded="false" aria-controls="cableDropdown">充電線材<img class="ic_arr" src="./images/icon/ic_down_black.svg" alt=""></span>
                 <ul class="navbar-nav collapse multi-collapse border-start ps-3" id="cableDropdown">
                   <li>
-                    <a class="nav-link" href="./product.html">Apple | C to C</a>
+                    <a class="nav-link" href="./products.html">Apple | C to C</a>
                   </li>
                   <li>
                     <a class="nav-link" href="#">Apple | C to Lightning</a>
@@ -784,5 +753,10 @@
       <img src="./images/icon/ic_pageTop.svg" alt="">
     </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- slick 套件 -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

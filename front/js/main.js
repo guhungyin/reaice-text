@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // 首頁輪播
     $('.bannerSlick').slick({
         arrows: true,
         centerMode: true,
@@ -63,8 +64,25 @@ $(document).ready(function(){
               }
             }
           ]
-      });
-    $('.productSlick').slick({
+    });
+    // 商品分類
+    $('.classificationSlick').slick({
+      slidesToShow: 6,
+      arrows: false,
+      autoplaySpeed: 5000,
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  dots: true,
+              }
+          },
+      ]
+    });
+    // 最新推出 + 熱門商品
+    $('.productsSlick').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
@@ -93,21 +111,71 @@ $(document).ready(function(){
             },
         ]
     });
-    $('.classificationSlick').slick({
-        slidesToShow: 6,
+    // 產品介紹頁面
+    $('.productImg').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false,
-        autoplaySpeed: 5000,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    dots: true,
-                }
-            },
-        ]
+        fade: true,
+        asNavFor: '.productSlick'
+      });
+    $('.productSlick').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.productImg',
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false,
+          }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
     });
+    // 相關商品
+    $('.relatedProductSlick').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 3,
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 2,
+                  arrows: false,
+                  dots: true,
+              }
+          },
+          {
+              breakpoint: 576,
+              settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                  dots: true,
+              }
+          },
+      ]
+  });
 });
 
 

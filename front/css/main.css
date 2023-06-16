@@ -1,9 +1,9 @@
 @import url(./base.css);
-.nav-link{
+a,.nav-link{
     color: var(--color-grey66);
 }
-.nav-link:hover,
-.nav-link:focus{
+a:hover,.nav-link:hover,
+a:focus,.nav-link:focus{
     color: var(--color-brownDeep);
 }
 /* 輪播 */
@@ -52,7 +52,7 @@
     color: var(--color-greyD4);
     border: none;
     padding-left: 2rem;
-    border-bottom: 2px solid var(--color-greyD4);
+    border-bottom: 1px solid var(--color-greyD4);
 }
 .searchInput:focus{
     box-shadow: none;
@@ -251,7 +251,7 @@
     color: var( --color-grey9f);
     font-size: .875rem;
 }
-.productExhibit .slick-arrow{
+.slick-arrow{
     position: absolute;
     transform: translate(0,-50%);
     top: 50%;
@@ -265,11 +265,11 @@
     height: 40px;
     z-index: 1;
 }
-.productExhibit .slick-arrow.slick-prev{
+.slick-arrow.slick-prev{
     left: -1%;
     background: #ffffffd9 url('../images/icon/ic_left_black.svg') no-repeat center center / 30%;
 }
-.productExhibit .slick-arrow.slick-next{
+.slick-arrow.slick-next{
     right: -1%;
     background: #ffffffd9 url('../images/icon/ic_right_black.svg') no-repeat center center / 30%;
 }
@@ -332,26 +332,4 @@
     .pageTop{
         bottom: 6rem;
     }
-}
-/* 分頁 */
-.page-link{
-    color: var(--color-grey66);
-    padding: 0.5rem 0.925rem;
-}
-.active>.page-link,
-.page-link.active{
-    background-color: var(--color-brownDeep);
-    border-color: var(--color-brownDeep);
-    color: var(--color-white);
-}
-.page-link:hover{
-    background-color: var(--color-brownDeep);
-    border-color: var(--color-brownDeep);
-    color: var(--color-white);
-}
-.page-link:focus{
-    background-color: var(--color-brownDeep);
-    border-color: var(--color-brownDeep);
-    color: var(--color-white);
-    box-shadow: 0 0 0 0.25rem var(--color-brownLight);
 }
