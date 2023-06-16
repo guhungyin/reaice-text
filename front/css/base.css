@@ -83,16 +83,30 @@ body{
 
 /* 按鈕 背景式 */
 .btn-brownDeep{
-    color: #fff;
+    color: var(--color-white);
     border-color: var(--color-brownDeep);
     background-color: var(--color-brownDeep);
 }
 .btn-check:focus+.btn-brownDeep, .btn-brownDeep:focus{
+    color: var(--color-white);
     border-color: var(--color-brownDeep);
     background-color: var(--color-brownDeep);
 }
 .btn-brownDeep:hover{
-    color: #fff;
+    color: var(--color-white);
     border-color: var(--color-brown5f);
     background-color: var(--color-brown5f);
+}
+/* List group */
+.list-group-item.active{
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}
+.list-group-item .icon{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
