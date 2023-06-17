@@ -45,3 +45,23 @@
 .list-group-item.active .ic_like{
     background-image: url('../images/icon/ic_like_white.svg');
 }
+.addressTabContent .icon{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.addressTabContent .ic_edit{
+    background-image: url('../images/icon/ic_edit_black.svg');
+}
+.addressTabContent .ic_delete{
+    background-image: url('../images/icon/ic_delete_black.svg');
+}
+.addressTabContent a:hover .ic_edit{
+    background-image: url('../images/icon/ic_edit_brown.svg');
+}
+.addressTabContent a:hover .ic_delete{
+    background-image: url('../images/icon/ic_delete_brown.svg');
+}

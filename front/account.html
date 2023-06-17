@@ -181,53 +181,56 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
-                <div class="pt-4 pe-lg-4">
-                    <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
-                            <i class="icon me-2 ic_account"></i>
-                            我的帳戶
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-update-information-list" data-bs-toggle="list" href="#list-update-information" role="tab" aria-controls="list-update-information">
-                            <i class="icon me-2 ic_information"></i>
-                            更新個人資訊
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-password-list" data-bs-toggle="list" href="#list-password" role="tab" aria-controls="list-password">
-                            <i class="icon me-2 ic_password"></i>
-                            更改密碼
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-order-list" data-bs-toggle="list" href="#list-order" role="tab" aria-controls="list-order">
-                            <i class="icon me-2 ic_order"></i>
-                            訂單查詢
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-address-list" data-bs-toggle="list" href="#list-address" role="tab" aria-controls="list-address">
-                            <i class="icon me-2 ic_address"></i>
-                            收件地址管理
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-controls="list-coupon">
-                            <i class="icon me-2 ic_coupon"></i>
-                            優惠券
-                        </a>
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-like-list" data-bs-toggle="list" href="#list-like" role="tab" aria-controls="list-like">
-                            <i class="icon me-2 ic_like"></i>
-                            收藏清單
-                        </a>
-                        <hr class="my-2">
-                        <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center">
-                            <i class="icon me-2 ic_logout"></i>
-                            登出
-                        </a>
-                    </div>
-                </div>
+              <div class="pt-4 pe-lg-4">
+                  <div class="list-group" id="list-tab" role="tablist">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
+                          <i class="icon me-2 ic_account"></i>
+                          我的帳戶
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-update-information-list" data-bs-toggle="list" href="#list-update-information" role="tab" aria-controls="list-update-information">
+                          <i class="icon me-2 ic_information"></i>
+                          更新個人資訊
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-password-list" data-bs-toggle="list" href="#list-password" role="tab" aria-controls="list-password">
+                          <i class="icon me-2 ic_password"></i>
+                          更改密碼
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-orders-list" data-bs-toggle="list" href="#list-orders" role="tab" aria-controls="list-orders">
+                          <i class="icon me-2 ic_order"></i>
+                          訂單查詢
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center " id="list-address-list" data-bs-toggle="list" href="#list-address" role="tab" aria-controls="list-address">
+                          <i class="icon me-2 ic_address"></i>
+                          收件地址
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-controls="list-coupon">
+                          <i class="icon me-2 ic_coupon"></i>
+                          優惠券
+                      </a>
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-like-list" data-bs-toggle="list" href="#list-like" role="tab" aria-controls="list-like">
+                          <i class="icon me-2 ic_like"></i>
+                          收藏清單
+                      </a>
+                      <hr class="my-2">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center">
+                          <i class="icon me-2 ic_logout"></i>
+                          登出
+                      </a>
+                  </div>
+              </div>
             </div>
             <div class="col-lg-9 col-md-8 col-12">
                 <div class="py-2 p-lg-4">
                     <div class="tab-content" id="nav-tabContent">
+                        <!-- 我的帳戶 -->
                         <div class="tab-pane fade" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
                             <h2 class="fw-bold mb-3">我的帳戶</h2>
                         </div>
+                        <!-- 更新個人資訊 -->
                         <div class="tab-pane fade" id="list-update-information" role="tabpanel" aria-labelledby="list-update-information-list">
                             <h2 class="fw-bold mb-3">更新個人資訊</h2>
                         </div>
+                        <!-- 更改密碼 -->
                         <div class="tab-pane fade" id="list-password" role="tabpanel" aria-labelledby="list-password-list">
                             <h2 class="fw-bold mb-3">更改密碼</h2>
                             <form class="row row-cols-1 row-cols-lg-2">
@@ -248,12 +251,14 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="tab-pane fade" id="list-order" role="tabpanel" aria-labelledby="list-order-list">
+                        <!-- 訂單查詢 -->
+                        <div class="tab-pane fade" id="list-orders" role="tabpanel" aria-labelledby="list-orders-list">
                             <h2 class="fw-bold mb-3">訂單查詢</h2>
                         </div>
-                        <div class="tab-pane fade show active" id="list-address" role="tabpanel" aria-labelledby="list-address-list">
+                        <!-- 收件地址 -->
+                        <div class="tab-pane fade addressTabContent" id="list-address" role="tabpanel" aria-labelledby="list-address-list">
                             <h2 class="fw-bold mb-3 d-flex justify-content-between">
-                                收件地址管理 
+                                收件地址 
                                 <button type="button" class="btn btn-outline-brownDeep" data-bs-toggle="modal" data-bs-target="#newAddressModal">
                                     新增地址
                                 </button>
@@ -262,12 +267,45 @@
                                 您目前尚無地址，請點擊新增來建立常用地址。
                             </div>
                             <div class="new_address mt-3">
-
+                              <table class="table align-middle">
+                                <thead>
+                                  <tr>
+                                    <th>地址</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="py-3">台中市西區台灣大道二段2號4F-6<span class="badge bg-danger ms-2">預設</span></td>
+                                    <td class="py-3">
+                                      <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#newAddressModal">
+                                        <i class="icon align-middle ic_edit"></i>
+                                      </a>
+                                      <a class="text-decoration-none ms-3" href="#">
+                                        <i class="icon align-middle ic_delete"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="py-3">台中市沙鹿區光華路391巷55號3F之2</td>
+                                    <td class="py-3">
+                                      <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#newAddressModal">
+                                        <i class="icon align-middle ic_edit"></i>
+                                      </a>
+                                      <a class="text-decoration-none ms-3" href="#">
+                                        <i class="icon align-middle ic_delete"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
+                        <!-- 優惠券 -->
+                        <div class="tab-pane fade show active" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
                             <h2 class="fw-bold mb-3">優惠券</h2>
                         </div>
+                        <!-- 收藏清單 -->
                         <div class="tab-pane fade" id="list-like" role="tabpanel" aria-labelledby="list-like-list">
                             <h2 class="fw-bold mb-3">收藏清單</h2>
                         </div>
@@ -287,22 +325,22 @@
                 <h6 class="fs-6 fw-bold">產品一覽</h6>
                 <ul class="nav flex-md-column">
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">手機線材</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">手機線材</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">充電器</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">充電器</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">直播專區</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">直播專區</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">車用專區</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">車用專區</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">耳機專區</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">耳機專區</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ps-0 px-md-0">視聽專區</a>
+                    <a href="./products.html" class="nav-link ps-0 px-md-0">視聽專區</a>
                   </li>
                 </ul>
               </div>
@@ -357,7 +395,7 @@
             </div>
           </div>
           <div class="footerConpany col-12 col-md-4">
-            <p class="fw-bold">追蹤 REAICE</p>
+            <p class="fw-bold">追蹤 <a class="text-decoration-none" href="./index.html">REAICE</a></p>
             <ul class="nav mb-3">
               <li class="nav-item me-1 me-lg-3">
                 <a class="communityIcon rounded-circle d-flex justify-content-center align-items-center" href="https://www.instagram.com/reaice_tw/">
@@ -380,15 +418,19 @@
                 </a>
               </li>
             </ul>
-            <p>407 台中市西屯區台灣大道二段2號</p>
-            <a class="nav-link px-0" href="04-22581618">電話 | 04-22581618</a>
-            <a class="nav-link px-0" href="mailto:admin@reaice.com">信箱 | admin@reaice.com</a>
+            <address>
+              <a class="nav-link px-0" href="https://goo.gl/maps/u54XsifDbUTpZmNSA" target="_blank">地址 | 407 台中市西區台灣大道二段2號4樓之6</a>
+              <a class="nav-link px-0" href="04-22581618">電話 | 04-22581618</a>
+              <a class="nav-link px-0" href="mailto:admin@reaice.com">信箱 | admin@reaice.com</a>
+            </address>
           </div>
         </div>
         <div class="d-flex flex-column flex-md-row justify-content-md-between py-3">
           <div class="d-flex justify-content-center justify-content-md-start text-nowrap">
-            <img class="me-2 d-none d-md-block" src="./images/logo/logo_01.svg" alt="">
-            Copyright © 2023, reaice.com, All Rights Reserved.
+            <a class="text-decoration-none" href="./index.html">
+              <img class="me-2 d-none d-md-block" src="./images/logo/logo_01.svg" alt="">
+            </a>
+            Copyright © 2023，<a class="text-decoration-none" href="./index.html">reaice.com</a>，All Rights Reserved.
           </div>
           <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -522,27 +564,65 @@
     <a href="#" class="pageTop position-fixed">
       <img src="./images/icon/ic_pageTop.svg" alt="">
     </a>
-    <!-- 新增地址 -->
+    <!-- 新增地址 + 編輯地址 -->
     <div class="modal fade" id="newAddressModal" tabindex="-1" aria-labelledby="newAddressModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="newAddressModalLabel">新增地址</h5>
+              <h5 class="modal-title d-none" id="newAddressModalLabel">編輯地址</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label for="addressName" class="form-label">收件人姓名</label>
-                    <input type="text" class="form-control" id="addressName" placeholder="請輸入收件人姓名">
+                    <label for="Name" class="form-label">收件人姓名</label>
+                    <input type="text" class="form-control" id="Name" placeholder="請輸入收件人姓名">
                 </div>
                 <div class="mb-3">
-                    <label for="addressName" class="form-label">聯絡電話</label>
-                    <input type="tel" class="form-control" id="addressName" placeholder="請輸入聯絡電話">
+                    <label for="Tel" class="form-label">聯絡電話</label>
+                    <input type="tel" class="form-control" id="Tel" placeholder="請輸入聯絡電話" aria-describedby="telHelp">
+                    <div id="telHelp" class="form-text">取貨通知將以此電話聯繫，請勿加入任何空格或符號，使用超商取貨請務必填寫10碼手機，如：0987654321</div>
                 </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-brownDeep" data-bs-dismiss="modal">取消</button>
-              <button type="button" class="btn btn-brownDeep">儲存</button>
+                <div class="mb-3">
+                  <label for="City" class="form-label">縣市</label>
+                  <select id="City" class="form-select">
+                    <option selected>縣市</option>
+                    <option value="1">台中市</option>
+                    <option value="2">台北市</option>
+                    <option value="3">高雄市</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mb-3">
+                    <label for="Township" class="form-label">鄉鎮市區</label>
+                    <select id="Township" class="form-select">
+                      <option selected>鄉鎮市區</option>
+                      <option value="中區">中區</option>
+                      <option value="東區">東區</option>
+                      <option value="南區">南區</option>
+                      <option value="西區">西區</option>
+                      <option value="北區">北區</option>
+                      <option value="北屯區">北屯區</option>
+                      <option value="西屯區">西屯區</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <label for="Postcode" class="form-label">郵遞區號</label>
+                    <input type="text" id="Postcode" class="form-control" placeholder="請輸入郵遞區號">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="Address" class="form-label">地址</label>
+                  <input type="text" id="Address" class="form-control" placeholder="請輸入地址">
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button type="button" class="btn w-100 btn-outline-brownDeep" data-bs-dismiss="modal">取消</button>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn w-100 btn-brownDeep">儲存</button>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
