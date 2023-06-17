@@ -183,27 +183,23 @@
             <div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
               <div class="pt-4 pe-lg-4">
                   <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
                           <i class="icon me-2 ic_account"></i>
-                          我的帳戶
-                      </a>
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-update-information-list" data-bs-toggle="list" href="#list-update-information" role="tab" aria-controls="list-update-information">
-                          <i class="icon me-2 ic_information"></i>
-                          更新個人資訊
+                          個人檔案
                       </a>
                       <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-password-list" data-bs-toggle="list" href="#list-password" role="tab" aria-controls="list-password">
                           <i class="icon me-2 ic_password"></i>
-                          更改密碼
+                          修改密碼
                       </a>
                       <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-orders-list" data-bs-toggle="list" href="#list-orders" role="tab" aria-controls="list-orders">
                           <i class="icon me-2 ic_order"></i>
                           訂單查詢
                       </a>
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center " id="list-address-list" data-bs-toggle="list" href="#list-address" role="tab" aria-controls="list-address">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-address-list" data-bs-toggle="list" href="#list-address" role="tab" aria-controls="list-address">
                           <i class="icon me-2 ic_address"></i>
                           收件地址
                       </a>
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-controls="list-coupon">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center " id="list-coupon-list" data-bs-toggle="list" href="#list-coupon" role="tab" aria-controls="list-coupon">
                           <i class="icon me-2 ic_coupon"></i>
                           優惠券
                       </a>
@@ -222,17 +218,79 @@
             <div class="col-lg-9 col-md-8 col-12">
                 <div class="py-2 p-lg-4">
                     <div class="tab-content" id="nav-tabContent">
-                        <!-- 我的帳戶 -->
-                        <div class="tab-pane fade" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
-                            <h2 class="fw-bold mb-3">我的帳戶</h2>
+                        <!-- 個人檔案 -->
+                        <div class="tab-pane fade show active" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
+                            <h2 class="fw-bold mb-3">個人檔案</h2>
+                            <form>
+                              <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="inputEmail3">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">手機</label>
+                                <div class="col-sm-10">
+                                  <input type="tel" class="form-control" id="inputEmail3">
+                                </div>
+                              </div>
+                              <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">生日</label>
+                                <div class="col-sm-10">
+                                  <div class="row">
+                                    <!-- 年 -->
+                                    <div class="col">
+                                      <div class="row">
+                                        <label class="col-sm-2 form-label">年</label>
+                                        <div class="col-sm-10">
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option value>請選擇</option>
+                                            <option value="1995" selected="selected">1995</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1997">1997</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 月 -->
+                                    <div class="col">
+                                      <div class="row">
+                                        <label class="col-sm-2 form-label">月</label>
+                                        <div class="col-sm-10">
+                                          <select class="form-select" aria-label="Default select example">
+                                            <option value>請選擇</option>
+                                            <option value="01" selected="selected">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 日 -->
+                                    <div class="col">
+                                      <label class="col-sm-2 form-label">日</label>
+                                      <select class="form-select" aria-label="Default select example">
+                                        <option value>請選擇</option>
+                                        <option value="01" selected="selected">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                      </select>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </form>
                         </div>
-                        <!-- 更新個人資訊 -->
-                        <div class="tab-pane fade" id="list-update-information" role="tabpanel" aria-labelledby="list-update-information-list">
-                            <h2 class="fw-bold mb-3">更新個人資訊</h2>
-                        </div>
-                        <!-- 更改密碼 -->
+                        <!-- 修改密碼 -->
                         <div class="tab-pane fade" id="list-password" role="tabpanel" aria-labelledby="list-password-list">
-                            <h2 class="fw-bold mb-3">更改密碼</h2>
+                            <h2 class="fw-bold mb-3">修改密碼</h2>
                             <form class="row row-cols-1 row-cols-lg-2">
                                 <!-- input -->
                                 <div class="mb-3 col">
@@ -302,7 +360,7 @@
                             </div>
                         </div>
                         <!-- 優惠券 -->
-                        <div class="tab-pane fade show active" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
+                        <div class="tab-pane fade" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
                             <h2 class="fw-bold mb-3">優惠券</h2>
                         </div>
                         <!-- 收藏清單 -->
