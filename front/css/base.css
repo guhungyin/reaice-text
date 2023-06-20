@@ -23,6 +23,75 @@ body{
     font-family: Inter, -apple-system, 'Microsoft JhengHei UI', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+/* 文字顏色 */
+.text-pink{
+    color: var(--color-pink);
+}
+.text-black{
+    color: var(--color-black)!important;
+}
+.text-grey66{
+    color: var(--color-grey66);
+}
+.text-grey9f{
+    color: var(--color-grey9f);
+}
+.text-greyD4{
+    color: var(--color-greyD4);
+}
+.text-greyE9{
+    color: var(--color-greyE9);
+}
+.text-greyF7{
+    color: var(--color-greyF7);
+}
+.text-brown{
+    color: var(--color-brown);
+}
+.text-brownDeep{
+    color: var(--color-brownDeep);
+}
+.text-brownLight{
+    color: var(--color-brownLight);
+}
+.text-brown5f{
+    color: var(--color-brown5f);
+}
+/* 背景顏色 */
+.bg-pink{
+    background-color: var(--color-pink);
+}
+.bg-black{
+    background-color: var(--color-black);
+}
+.bg-grey66{
+    background-color: var(--color-grey66);
+}
+.bg-grey9f{
+    background-color: var(--color-grey9f);
+}
+.bg-greyD4{
+    background-color: var(--color-greyD4);
+}
+.bg-greyE9{
+    background-color: var(--color-greyE9);
+}
+.bg-greyF7{
+    background-color: var(--color-greyF7);
+}
+.bg-brown{
+    background-color: var(--color-brown);
+}
+.bg-brownDeep{
+    background-color: var(--color-brownDeep);
+}
+.bg-brownLight{
+    background-color: var(--color-brownLight);
+}
+.bg-brown5f{
+    background-color: var(--color-brown5f);
+}
+/* 文字 */
 .fs-7{
     font-size: .9rem;
 }

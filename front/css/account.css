@@ -65,3 +65,29 @@
 .addressTabContent a:hover .ic_delete{
     background-image: url('../images/icon/ic_delete_brown.svg');
 }
+.wishlistContent .ic_like{
+    background-color: var(--color-brownDeep);
+    width: 30px;
+    height: 30px;
+}
+.wishlistContent .ic_like img{
+    width: 16px;
+    height: 16px;
+}
+/* 優惠券 */
+.couponContent .icon{
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.couponContent .newMember .icon{
+    background-image: url('../images/icon/ic_account_white.svg');
+}
+.couponContent .freeCar .icon{
+    background-image: url('../images/icon/ic_car_white.svg');
+}
+.couponContent .shopMoney .icon{
+    background-image: url('../images/icon/ic_shop_white.svg');
+}
