@@ -326,12 +326,34 @@
                         <!-- 訂單查詢 -->
                         <div class="tab-pane fade show active" id="list-orders" role="tabpanel" aria-labelledby="list-orders-list">
                             <h2 class="fw-bold mb-4">訂單查詢</h2>
+                            <div class="mt-3 d-none">
+                              您目前尚無訂單。
+                            </div>
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">訂單編號</th>
+                                  <th scope="col">訂單日期</th>
+                                  <th scope="col">訂單總額</th>
+                                  <th scope="col">付款方式</th>
+                                  <th scope="col">訂單狀態</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>CL542486</td>
+                                  <td>2023.06.20</td>
+                                  <td>NT$3,999</td>
+                                  <td>信用卡</td>
+                                  <td>已出貨</td>
+                                  <td>
+                                    <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">查看詳情</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                             <div class="row">
                               <div class="col-12">
-                                <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                  <span>1</span>
-                                  <span>2023.06.20</span>
-                                </a>
                                 <div class="collapse" id="collapseExample">
                                   <div class="card border-0">
                                     <div class="row g-0 p-2 p-md-2">
@@ -429,6 +451,9 @@
                         <!-- 優惠券 -->
                         <div class="tab-pane fade couponContent" id="list-coupon" role="tabpanel" aria-labelledby="list-coupon-list">
                             <h2 class="fw-bold mb-4">優惠券</h2>
+                            <div class="mt-3 d-none">
+                              您目前尚無優惠券。
+                            </div>
                             <div class="row row-cols-1 row-cols-lg-2 g-2">
                               <div class="col newMember">
                                 <div class="card">
