@@ -182,3 +182,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
+/* 文字縮排 */
+.indent-2{
+    padding-left: 2em;
+}

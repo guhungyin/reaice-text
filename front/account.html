@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>收藏清單 REAICE台陞科技 │ 消費性電子專家</title>
+    <title>REAICE台陞科技 │ 消費性電子專家</title>
     <meta name="keywords" content="3C,車充,充電線.電子產品,powerbank,行動電源,Apple MFi認證品晶片,apple,oppo,type c,usba,馬卡龍,直播燈,電容麥克風,會議麥克風,20W USB TO TYPE-C,reaice,REAICE">
     <meta name="description" content="Reaice台灣消費型電子品牌-Reaice一直都在為世界各地品牌提供專業且優質的消費性電子產品，從設計、提案、開模、製造一手包辦。台陞科技有限公司1999年於中國廣東成立第一間電子工廠，2014年成立線材工廠，在日本、香港皆有我們的營業所。20多年的時間裡，一直致力於開發消費型3C電子產品，協助日本、北歐各大海外市場OEM、ODM，2021年總公司於台灣成立，2022年開始我們的新品牌REAICE!">
     <meta name="format-detection" content="telephone=no">
@@ -148,7 +148,7 @@
                 <button class="btn text-nowrap" type="submit">搜尋</button>
               </form>
             </div>
-            <a href="#" class="cartBtn text-decoration-none position-relative">
+            <a href="./cart.html" class="cartBtn text-decoration-none position-relative">
               <img src="./images/icon/ic_cart.svg" alt="購物車">
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
                 0
@@ -183,7 +183,7 @@
             <div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
               <div class="pt-4 pe-lg-4">
                   <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-account-list" data-bs-toggle="list" href="#list-account" role="tab" aria-controls="list-account">
                           <i class="icon me-2 ic_account"></i>
                           個人檔案
                       </a>
@@ -191,7 +191,7 @@
                           <i class="icon me-2 ic_password"></i>
                           修改密碼
                       </a>
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center active" id="list-orders-list" data-bs-toggle="list" href="#list-orders" role="tab" aria-controls="list-orders">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" id="list-orders-list" data-bs-toggle="list" href="#list-orders" role="tab" aria-controls="list-orders">
                           <i class="icon me-2 ic_order"></i>
                           訂單查詢
                       </a>
@@ -208,7 +208,7 @@
                           收藏清單
                       </a>
                       <hr class="my-2">
-                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center">
+                      <a class="list-group-item list-group-item-action border-0 rounded-3 mb-1 d-flex align-items-center" href="">
                           <i class="icon me-2 ic_logout"></i>
                           登出
                       </a>
@@ -219,7 +219,7 @@
                 <div class="py-2 p-lg-4">
                     <div class="tab-content" id="nav-tabContent">
                         <!-- 個人檔案 -->
-                        <div class="tab-pane fade" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
+                        <div class="tab-pane fade show active" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
                             <h2 class="fw-bold mb-4">個人檔案</h2>
                             <form>
                               <div class="row mb-4">
@@ -295,12 +295,26 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="mb-4">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="checkNews">
+                                  <label class="form-check-label" for="checkNews">
+                                    我願意收到REAICE電子報
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="checkPolicy">
+                                  <label class="form-check-label" for="checkPolicy">
+                                    我已閱讀並同意 <a href="#">《隱私權保護政策》</a>及<a href="#">《定型化契約條款》</a>
+                                  </label>
+                                </div>
+                              </div>
                               <div class="row mb-4">
                                 <div class="col">
                                   <button type="button" class="btn btn-brownDeep">確定修改</button>
                                 </div>
                               </div>
-                          </form>
+                            </form>
                         </div>
                         <!-- 修改密碼 -->
                         <div class="tab-pane fade" id="list-password" role="tabpanel" aria-labelledby="list-password-list">
@@ -324,7 +338,7 @@
                             </form>
                         </div>
                         <!-- 訂單查詢 -->
-                        <div class="tab-pane fade show active" id="list-orders" role="tabpanel" aria-labelledby="list-orders-list">
+                        <div class="tab-pane fade" id="list-orders" role="tabpanel" aria-labelledby="list-orders-list">
                             <h2 class="fw-bold mb-4">訂單查詢</h2>
                             <div class="mt-3 d-none">
                               您目前尚無訂單。
